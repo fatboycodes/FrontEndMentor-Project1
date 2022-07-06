@@ -1,0 +1,60 @@
+:root {
+
+     /* Primary */
+
+    --Button-Aquamarine: hsl(158, 36%, 37%);
+    --Background-Cream: hsl(30, 38%, 92%);
+    
+    /* Neutral */
+    --Paragraph-Aurometal: hsl(228, 12%, 48%);
+    --H1-Gunmetal: hsl(212, 21%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Typography */
+    /* Body Copy */
+    
+    
+    /* Font */
+}    
+
+
+ /* Remove default contnet box styling*/
+
+ html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .contentbox-box-element {
+    box-sizing: content-box;
+  }
+
+  
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+
+/* Place all content within the body to the the center of the page*/
+   body {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    background-color: var(--Background-Cream);
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Place all content within the body to the the center of the page*/
+
+   .card {
+    background-color: var(--White);
+    min-width: 600px;
+    
+  }
+  
