@@ -33,28 +33,59 @@
   }
 
   
-* {
+*   {
     margin: 0;
     padding: 0;
+    
    }
 
 
-/* Place all content within the body to the the center of the page*/
    body {
-    display: flex;
+    width: 100%;
     height: 100vh;
-    width: auto;
     background-color: var(--Background-Cream);
+    display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-   
-}
-
-/* Place all content within the body to the the center of the page*/
-
-   .card {
-    background-color: var(--White);
-    min-width: 600px;
     
-  }
-  
+
+   }
+
+    /* show 100% width of the box and it's contents*/
+   main {width: 100%;}
+   
+
+ /* show everything in the box*/
+   .card {
+    min-width: 600px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--White);
+    /* to center it use autio margin, 0 = top and bottom margin
+    and auto places it in the middle of the viewport.*/
+    
+    
+    
+
+    /* curved edges*/
+    
+   }
+   .cardleft {
+    width: 50%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: brown;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+    
+    .cardright {
+        width: 50%;
+        display: flex;
+
+
