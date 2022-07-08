@@ -18,7 +18,7 @@
 }    
 
 
- /* Remove default contnet box styling*/
+ /* Remove default contnet box styling that HTML Automatically applies*/
 
  html {
     box-sizing: border-box;
@@ -37,55 +37,165 @@
     margin: 0;
     padding: 0;
     
+    
    }
+
 
 
    body {
-    width: 100%;
-    height: 100vh;
     background-color: var(--Background-Cream);
+    min-height: 100vh;
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    
-
+    margin: 0;
+   
+   
    }
-
-    /* show 100% width of the box and it's contents*/
-   main {width: 100%;}
    
 
  /* show everything in the box*/
    .card {
-    min-width: 600px;
-    width: 30%;
-    border-radius: 10px;
-    margin: 0 auto;
+    width: 600px;
+    height: 450px;
     display: flex;
     background-color: var(--White);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* to center it use autio margin, 0 = top and bottom margin
     and auto places it in the middle of the viewport.*/
-    
-    
-    
-
-    /* curved edges*/
-    
    }
-   .cardleft {
+
+   .cardleft-image {
+   
+    height: 100%;
     width: 50%;
     background-image: url(/images/image-product-desktop.jpg);
-    background-position: center;
     background-size: cover;
-    background-color: brown;
-    border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   }
+  
+   .cardright {
+    
+    
+    width: 50%;
+    padding: 32px;
+    align-items: center;
+    box-sizing: border-box;
+   
+
     
 }
+
+.product-category{
     
-    .cardright {
-        width: 50%;
-        display: flex;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  
+   
+    color: var(--Paragraph-Aurometal);
+    
+}
+
+.product-name {
+
+    margin-block-end: 0%; 
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+    
+    color: var(--H1-Gunmetal);
+}
 
 
+.product-information {
+
+ /*  border-style: solid; */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 23px;
+  padding-bottom: 20px;
+  max-width: 237px;
+  color: var(--Paragraph-Aurometal);
+  
+}
+
+
+.prices {
+
+  
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+}
+
+
+.new-price {
+ 
+
+font-family: Fraunces;
+flex: 1;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+
+
+color: var(--Button-Aquamarine);
+}
+
+.old-price{
+  font-family: Montserrat;
+  flex: 1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 32px;
+  color: var(--Paragraph-Aurometal);
+  padding-left: 24px;
+  text-decoration: line-through;
+  
+}
+
+
+.add-to-cart {
+
+  position: relative;
+  display: flex;
+  font-family: Montserrat;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--White);
+  width: 236px;
+  height: 48px;
+  line-height: 17.07px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--Button-Aquamarine);
+  
+  margin-top: 30px;
+  margin-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.carttext {
+  margin-left: 10px;
+}
